@@ -3,8 +3,8 @@ project(fortran-c-api LANGUAGES C Fortran)
 
 set(CMAKE_BUILD_TYPE Debug)
 
-add_library(capi capi/capi.c capi/fapi.c)
-set(headers capi/capi.h capi/fapi.h)
+add_library(capi capi/capi.c)
+set(headers capi/capi.h)
 install(TARGETS capi DESTINATION lib)
 install(FILES ${headers} DESTINATION include)
 
